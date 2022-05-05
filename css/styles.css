@@ -558,9 +558,12 @@ footer .copyright{
         grid-gap: 1rem;
         margin-bottom: 1.5rem;
     }
-    section.contact .img{
-        width: 45px;
-    } 
+    section.contact .card-wrapper .card img{
+        width: 50px;
+    }
+    section.contact .card-wrapper .card .img-phone img{
+        width: 40;
+    }   
     .mobile-nav{
         opacity: 80%;
         padding: 2rem;   
