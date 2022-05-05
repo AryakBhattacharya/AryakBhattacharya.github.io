@@ -316,7 +316,7 @@ section.contact .card-wrapper{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 section.contact .card-wrapper .card{
     text-align: center;
@@ -335,14 +335,14 @@ section.contact .card-wrapper .card h6{
 }  
 section.contact input{
     padding: .5rem;
-    font-size: .8rem;
-    margin-bottom: 1.5rem;
+    font-size: .8rem; 
     border: 1px solid var(--light);
 }
 section.contact .input-wrap{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
 }
 section.contact input:focus, section.contact .input-wrap-2 textarea:focus{
     outline: none;
@@ -350,10 +350,11 @@ section.contact input:focus, section.contact .input-wrap-2 textarea:focus{
 section.contact .input-wrap-2{
     display: flex;
     flex-direction: column;
+    
 }
-/*section.contact .input-wrap-2 input{
-    margin-bottom: 1.5rem;
-}*/
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
 section.contact .input-wrap-2 textarea{
     padding: 0.5rem;
     font-size: .8rem;
@@ -550,13 +551,16 @@ footer .copyright{
     }
     section.contact .card-wrapper .card h6 {
         font-size: 0.7rem;
+        margin-bottom: -1rem;
     }
-    section.contact input {
-        padding: .5rem;
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+        margin-bottom: 1.5rem;
     }
-    section.contact .input-wrap input{
-        width: 10.5rem;
-    }   
+    section.contact .img{
+        width: 45px;
+    } 
     .mobile-nav{
         opacity: 80%;
         padding: 2rem;   
