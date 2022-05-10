@@ -323,11 +323,11 @@ html {
     margin-top: -12rem;
 }
 
-/*.hero .right h6 {
-    font-size: 1.2rem;
+.hero .right h6 {
+    font-size: 3rem;
     color: var(--primary);
     margin-bottom: .5rem;
-}*/
+}
 
 .hero .right h1 {
     font-weight: 100;
@@ -336,7 +336,7 @@ html {
 }
 
 .hero .right h1 span {
-    font-size: 50px;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
     color: var(--primary);
