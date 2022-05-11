@@ -51,10 +51,21 @@
     color: var(--dark);
 }
 
+.btn-tertiary{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-tertiary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--dark);
+}
+
 .btn-primary-nav{
     background: transparent;
-    color: var(--dark);
-    border-color: var(--dark);
+    color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .btn-primary-nav:hover{
