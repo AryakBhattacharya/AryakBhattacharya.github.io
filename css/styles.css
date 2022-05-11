@@ -347,20 +347,20 @@ html {
     margin-top: -12rem;
 }
 
-.hero .right h6 {
-    font-size: 3rem;
+.hero .right h1 {
+    font-size: 5rem;
     color: var(--primary);
-    margin-bottom: .5rem;
 }
 
-.hero .right h1 {
+.hero .right h6 {
+    font-size: 1.5rem;
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
 
-.hero .right h1 span {
-    font-size: 2rem;
+.hero .right h6 span {
+    font-size: 2.5rem;
     font-weight: bold;
     font-style: italic;
     color: var(--primary);
@@ -811,7 +811,15 @@ footer .copyright {
     }
 
     .hero .right h1 {
-        font-size: 2rem;
+        font-size: 4rem;
+    }
+
+    .hero .right h6 {
+        font-size: 1.3rem;
+    }
+
+    .hero .right h6 span{
+        font-size: 1.8rem;
     }
 
     .hero {
