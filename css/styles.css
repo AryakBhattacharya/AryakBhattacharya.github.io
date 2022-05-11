@@ -348,8 +348,19 @@ html {
 }
 
 .hero .right h1 {
-    font-size: 5rem;
-    color: var(--primary);
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--primary);
+    background: url(./back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
 }
 
 .hero .right h6 {
