@@ -21,7 +21,13 @@ body, html{
 
 /*----------------------------Nav-bar----------------------------*/
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 section.nav-bar .container{
+    
     background: var(--dark);
     width: 15%;
     height: 100%;
@@ -94,7 +100,27 @@ section.education h1{
     font-style: italic;
 }
 
-section.education p{
+section.education table {
+    margin-left: 2rem;
+    width: 96%;
+    border-collapse: collapse;
+    background: var(--dark);
+    opacity: 70%;
+}
+
+/*section.education table, th, td {
+    border: 1px solid;
+}*/
+
+section.education th, td {
+    border: 1px solid;
+    font-size: 1.5rem;
+    height: 50px;
+    text-align: center;
+    color: var(--pure);
+}
+
+/*p{
     padding: 2rem;
     margin: 0 2rem;
     text-align: center;
@@ -102,7 +128,7 @@ section.education p{
     color: var(--pure);
     background: var(--dark);
     opacity: 70%;
-}
+}*/
 
 /*----------------------------Achievements----------------------------*/
 
