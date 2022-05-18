@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+
+    <audio id="myAudio" autoplay loop>   
+        <source src="Purrple cat - Missing You.mp3" type="audio/wav" />
+    </audio>
+
     <!------------------------------loader---------------------------->
     
     <div id="preloader" class="boxes">
@@ -335,5 +339,6 @@
     backSpeed: 100,
     loop: true
 })</script>
+<script>document.getElementById("myAudio").volume = 0.1;</script>
 </body>
 </html>
