@@ -11,9 +11,9 @@
 </head>
 <body>
 
-    <audio id="myAudio" autoplay loop>   
+    <!-- <audio id="myAudio" autoplay loop>   
         <source src="Purrple cat - Missing You.mp3" type="audio/wav" />
-    </audio>
+    </audio> -->
 
     <!------------------------------loader---------------------------->
     
@@ -222,17 +222,26 @@
      <h1 class="section-heading"><span>My</span> Projects</h1>
      <p>Some of my projects are as follows</p>
      <div class="card-wrapper">
-        <div class="card"><a href="#">
-             <div class="overlay">
-                 <!--span>Category</span-->
-                <p>Web Development</p>
-             </div>
-             <a href="#"><img src="./Images/ph-1.png" alt=""></a>
-            </a>
-        </div>
-        <div class="card"><a href="#">
+        <div class="card" onclick="openPopup('Autobots', '', 'Aryak', './Videos/Autobots.mp4')">
             <div class="overlay">
-                <!--span>Category</span-->
+                <p>Autobots</p>
+            </div>
+            <a href="#"><img src="./Images/Autobots (2).jpeg" alt=""></a>
+        </div>
+        <div class="card" onclick="openPopup('Web Development', './Images/ph-1.png', 'Akash', '')">
+            <div class="overlay">
+                <p>Web Development</p>
+            </div>
+            <a href="#"><img src="./Images/ph-1.png" alt=""></a>
+        </div>
+        <div class="card" onclick="openPopup('AI/ML', './Images/ph-1.png', 'Kaushik', '')">
+            <div class="overlay">
+                <p>AI/ML</p>
+            </div>
+            <a href="#"><img src="./Images/ph-1.png" alt=""></a>
+        </div>
+        <!-- <div class="card"><a href="#">
+            <div class="overlay">
                 <p>Web Development</p>
             </div>
             <a href="#"><img src="./Images/ph-1.png" alt=""></a>
@@ -240,7 +249,6 @@
         </div>
         <div class="card"><a href="#">
             <div class="overlay">
-                <!--span>Category</span-->
                 <p>Web Development</p>
             </div>
             <a href="#"><img src="./Images/ph-1.png" alt=""></a>
@@ -248,31 +256,28 @@
         </div>
         <div class="card"><a href="#">
             <div class="overlay">
-                <!--span>Category</span-->
-                <p>Web Development</p>
-            </div>
-            <a href="#"><img src="./Images/ph-1.png" alt=""></a>
-           </a>
-        </div>
-        <div class="card"><a href="#">
-            <div class="overlay">
-                <!--span>Category</span-->
-                <p>Web Development</p>
-            </div>
-            <a href="#"><img src="./Images/ph-1.png" alt=""></a>
-           </a>
-        </div>
-        <div class="card"><a href="#">
-            <div class="overlay">
-                <!--span>Category</span-->
                 <p>Web Development</p>
             </div>
             <a href="#"><img src="./Images/ph-1.png" alt="" ></a>
            </a>
-        </div>
+        </div> -->
      </div>
  </div>
 </section>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <h1 id="popup-title"></h1>
+        <!-- Add any additional content you want for the popup -->
+        <h2 id="popup-desc"></h2>
+        <img id="popup-image" src="" alt="">
+        <video id="videoPlayer" width=320 height=320 controls>
+            <!-- <source src="" type="video/mp4"> -->
+        </video>    
+    </div>
+</div>
+
 
 <section id="contacts" class="contact">
  <div class="container">
@@ -341,5 +346,6 @@
     loop: true
 })</script>
 <script>document.getElementById("myAudio").volume = 0.2;</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

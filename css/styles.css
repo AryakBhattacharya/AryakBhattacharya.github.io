@@ -627,6 +627,66 @@ section.work .card-wrapper .card img {
     border-radius: 10px;
 }
 
+/*----------------------------Pop up----------------------------*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    /* width: 90%;
+    height: 90%; */
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    /* max-width: 600px; */
+    /* width: 100%; */
+    height: 85vh;
+    width: 85vw;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.close-popup {
+    /* display: none; */
+    position: absolute;
+    top: 7.7vh;
+    right: 8vw;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Add any additional styles you want for the popup content */
+.popup-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* .popup-overlay {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    /* width: 100%;
+    height: 100%; */
+    background: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
+    /* z-index: 0; Lower z-index than the popup content */
+} */
+
 /*----------------------------Contact Me----------------------------*/
 
 section.contact {
