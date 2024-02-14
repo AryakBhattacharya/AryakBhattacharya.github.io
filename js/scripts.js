@@ -7,10 +7,14 @@ function openPopup(title, imageUrl, desc, videoUrl) {
     document.getElementById('popup-desc').innerText = desc;
 
     const videoPlayer = document.getElementById('videoPlayer');
-
+    console.log(videoUrl);
 //   // Get the video URL from the query parameter
 //   const urlParams = new URLSearchParams(window.location.search);
 //   const videoUrl = urlParams.get('videoUrl');
+if(videoUrl.length<2)
+{
+    document.getElementById('videoPlayer').style.display="none";
+}
 
   if (videoUrl) {
     // Set the video source dynamically
@@ -33,6 +37,7 @@ function openPopup(title, imageUrl, desc, videoUrl) {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
     isPopupOpen = false;
+    console.log(videoUrl);
 }
 
 document.addEventListener('keydown', function (event) {

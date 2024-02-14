@@ -645,7 +645,7 @@ section.work .card-wrapper .card img {
 }
 
 .popup-content {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,1);
     padding: 20px;
     /* max-width: 600px; */
     /* width: 100%; */
@@ -653,7 +653,7 @@ section.work .card-wrapper .card img {
     width: 85vw;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     color: #fff;
 }
 
