@@ -11,13 +11,14 @@ function openPopup(title, imageUrl, desc, videoUrl) {
 //   // Get the video URL from the query parameter
 //   const urlParams = new URLSearchParams(window.location.search);
 //   const videoUrl = urlParams.get('videoUrl');
-if(videoUrl.length<2)
-{
-    document.getElementById('videoPlayer').style.display="none";
-}
+// if(videoUrl.length<2)
+// {
+//     document.getElementById('videoPlayer').style.display="none";
+// }
 
   if (videoUrl) {
-    // Set the video source dynamically
+    // Set the video source dynamically\
+    document.getElementById('videoPlayer').style.display="";
     const source = document.createElement('source');
     source.src = decodeURIComponent(videoUrl);
     source.type = 'video/mp4';
@@ -28,7 +29,9 @@ if(videoUrl.length<2)
     //   videoPlayer.play();
     // });
   } else {
-    console.error('Video URL not provided.');
+    // console.error(document.getElementById('videoPlayer').style)
+    document.getElementById('videoPlayer').style.display="none";
+
   }
 
     isPopupOpen = true;  // Set the flag to true when the popup opens
@@ -37,7 +40,7 @@ if(videoUrl.length<2)
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
     isPopupOpen = false;
-    console.log(videoUrl);
+    // console.log(videoUrl);
 }
 
 document.addEventListener('keydown', function (event) {
