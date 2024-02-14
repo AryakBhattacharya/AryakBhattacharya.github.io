@@ -7,6 +7,7 @@
     --ternary: #898989;
     --light: #F2F2F2;
     --secondary: #070606;
+    --overlay: #070606f1;
 }
 
 body {
@@ -630,7 +631,7 @@ section.work .card-wrapper .card img {
 /*----------------------------Pop up----------------------------*/
 
 .popup {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0%;
     left: 0%;
@@ -638,7 +639,7 @@ section.work .card-wrapper .card img {
     bottom: 0%;
     /* width: 90%;
     height: 90%; */
-    background: rgba(0, 0, 0, .8);
+    background: var(--overlay);
     justify-content: center;
     align-items: center;
     z-index: 1000;
